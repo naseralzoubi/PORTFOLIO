@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #0066ff, #ff5500, #00cc99);
+    background-size: 300% 300%;
+    animation: bgAnimation 8s infinite alternate;
+    color: white;
+    text-align: center;
+}
+
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.header {
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.floating-menu {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 10px;
+}
+
+.floating-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.floating-menu a:hover {
+    color: yellow;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.work {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.work:hover {
+    transform: scale(1.05);
+    background: #ffcc00;
+    color: black;
+}
